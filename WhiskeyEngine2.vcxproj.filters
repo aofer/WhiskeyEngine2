@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{7c98ce99-b272-40e0-b700-9c1db26ee484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppInit">
+      <UniqueIdentifier>{1ccf6227-be04-4955-b670-5d2c5b449d4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\appInit\Application.cpp">
+      <Filter>AppInit</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\appInit\ApplicationSettings.h">
+      <Filter>AppInit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\WECommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppInit\Application.h">
+      <Filter>AppInit</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
