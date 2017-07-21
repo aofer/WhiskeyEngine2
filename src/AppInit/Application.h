@@ -1,4 +1,5 @@
-#include "../Common/WECommon.h"
+#pragma once
+#include <Common/WECommon.h>
 #include "ApplicationSettings.h"
 NAMESPACE_BEGIN(AppInit)
 
@@ -8,7 +9,7 @@ private:
 	ApplicationSettings m_settings;
 
 public:
-	void Init(ApplicationSettings settings);
+	int Init(ApplicationSettings settings);
 };
 
 NAMESPACE_END

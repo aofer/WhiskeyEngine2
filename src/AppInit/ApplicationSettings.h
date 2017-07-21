@@ -1,3 +1,5 @@
+#pragma once
+
 #include <Common/WECommon.h>
 #include <string>
 NAMESPACE_BEGIN(AppInit)

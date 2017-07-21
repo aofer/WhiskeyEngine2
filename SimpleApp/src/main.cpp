@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	winSettings.m_windowHeight = 768;
 	winSettings.m_windowWidth = 1024;
 	winSettings.m_isReshapable = false;
-	winSettings.m_isReshapable = "Simple Game";
+	winSettings.m_name = "Simple Game";
 	settings.m_winSettings = winSettings;
 	AppInit::Application app;
 	app.Init(settings);

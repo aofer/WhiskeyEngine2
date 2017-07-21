@@ -11,9 +11,18 @@
     <Filter Include="AppInit">
       <UniqueIdentifier>{1ccf6227-be04-4955-b670-5d2c5b449d4d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{e1aa9721-1f2a-49a0-a17c-0a459ba9b99f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\appInit\Application.cpp">
+      <Filter>AppInit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppInit\Init_GLFW.cpp">
+      <Filter>AppInit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AppInit\Init_GLEW.cpp">
       <Filter>AppInit</Filter>
     </ClCompile>
   </ItemGroup>
@@ -25,6 +34,15 @@
       <Filter>Common</Filter>
     </ClInclude>
     <ClInclude Include="src\AppInit\Application.h">
+      <Filter>AppInit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppInit\Init_GLFW.h">
+      <Filter>AppInit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppInit\Init_GLEW.h">
+      <Filter>AppInit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AppInit\GLContextInfo.h">
       <Filter>AppInit</Filter>
     </ClInclude>
   </ItemGroup>
