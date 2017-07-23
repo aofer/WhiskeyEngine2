@@ -22,6 +22,10 @@
     <ClCompile Include="src\appInit\Application.cpp" />
     <ClCompile Include="src\AppInit\Init_GLEW.cpp" />
     <ClCompile Include="src\AppInit\Init_GLFW.cpp" />
+    <ClCompile Include="src\Rendering\Camera.cpp" />
+    <ClCompile Include="src\Rendering\Models\SimpleMesh.cpp" />
+    <ClCompile Include="src\Rendering\ShaderManager.cpp" />
+    <ClCompile Include="src\Rendering\ShaderProgram.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\AppInit\Application.h" />
@@ -30,6 +34,11 @@
     <ClInclude Include="src\AppInit\Init_GLEW.h" />
     <ClInclude Include="src\AppInit\Init_GLFW.h" />
     <ClInclude Include="src\Common\WECommon.h" />
+    <ClInclude Include="src\Rendering\Camera.h" />
+    <ClInclude Include="src\Rendering\Models\SimpleMesh.h" />
+    <ClInclude Include="src\Rendering\Models\VertexFormat.h" />
+    <ClInclude Include="src\Rendering\ShaderManager.h" />
+    <ClInclude Include="src\Rendering\ShaderProgram.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5A8BD8F9-F6C8-4CCB-AA7D-D5EF1457E66E}</ProjectGuid>

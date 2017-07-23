@@ -14,6 +14,9 @@
     <Filter Include="Rendering">
       <UniqueIdentifier>{e1aa9721-1f2a-49a0-a17c-0a459ba9b99f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Rendering\Models">
+      <UniqueIdentifier>{26c26b50-8219-4371-a8fb-03522c1dde13}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\appInit\Application.cpp">
@@ -24,6 +27,18 @@
     </ClCompile>
     <ClCompile Include="src\AppInit\Init_GLEW.cpp">
       <Filter>AppInit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rendering\Models\SimpleMesh.cpp">
+      <Filter>Rendering\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rendering\Camera.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rendering\ShaderProgram.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rendering\ShaderManager.cpp">
+      <Filter>Rendering</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +59,21 @@
     </ClInclude>
     <ClInclude Include="src\AppInit\GLContextInfo.h">
       <Filter>AppInit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rendering\Models\VertexFormat.h">
+      <Filter>Rendering\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rendering\Models\SimpleMesh.h">
+      <Filter>Rendering\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rendering\Camera.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rendering\ShaderProgram.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Rendering\ShaderManager.h">
+      <Filter>Rendering</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

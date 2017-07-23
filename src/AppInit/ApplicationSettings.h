@@ -16,7 +16,7 @@ struct WindowSettings
 struct ApplicationSettings
 {
 	WindowSettings m_winSettings;
-
+	std::string		m_resourcesFolder;
 };
 
 
