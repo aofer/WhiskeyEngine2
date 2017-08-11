@@ -11,7 +11,7 @@
 NAMESPACE_BEGIN(Rendering)
 
 
-static std::string readFileIntoString(const std::string& filename);
+static std::string ReadFileIntoString(const std::string& filename);
 
 
 	class ShaderManager
@@ -19,7 +19,7 @@ static std::string readFileIntoString(const std::string& filename);
 
 	public:
 		//TODO consider removing singleton
-		static ShaderManager& getInstance()
+		static ShaderManager& GetInstance()
 		{
 			static ShaderManager    instance; // Guaranteed to be destroyed.
 											  // Instantiated on first use.

@@ -2,7 +2,7 @@
 
 NAMESPACE_BEGIN(Rendering)
 
-static std::string readFileIntoString(const std::string& filename)
+static std::string ReadFileIntoString(const std::string& filename)
 {
 
 	std::string content;
@@ -36,7 +36,7 @@ ShaderManager::~ShaderManager(void)
 
 std::string ShaderManager::ReadShader(const std::string& filename)
 {
-	return readFileIntoString(filename);
+	return ReadFileIntoString(filename);
 }
 
 GLuint ShaderManager::CreateShader(GLenum shaderType, const std::string& source, const std::string& shaderName)

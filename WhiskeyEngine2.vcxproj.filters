@@ -40,6 +40,9 @@
     <ClCompile Include="src\Rendering\ShaderManager.cpp">
       <Filter>Rendering</Filter>
     </ClCompile>
+    <ClCompile Include="src\Common\WELogger.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\appInit\ApplicationSettings.h">
@@ -74,6 +77,9 @@
     </ClInclude>
     <ClInclude Include="src\Rendering\ShaderManager.h">
       <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Common\WELogger.h">
+      <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

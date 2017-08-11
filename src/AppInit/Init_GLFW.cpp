@@ -1,5 +1,5 @@
 #include "Init_GLFW.h"
-
+#include <Common/WELogger.h>
 NAMESPACE_BEGIN(AppInit)
 
 GLFWwindow* window = NULL;
