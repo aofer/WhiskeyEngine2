@@ -23,6 +23,7 @@
     <ClCompile Include="src\AppInit\Init_GLEW.cpp" />
     <ClCompile Include="src\AppInit\Init_GLFW.cpp" />
     <ClCompile Include="src\Common\WELogger.cpp" />
+    <ClCompile Include="src\Loaders\ObjMeshFactory.cpp" />
     <ClCompile Include="src\Rendering\Camera.cpp" />
     <ClCompile Include="src\Rendering\Models\SimpleMesh.cpp" />
     <ClCompile Include="src\Rendering\ShaderManager.cpp" />
@@ -36,6 +37,8 @@
     <ClInclude Include="src\AppInit\Init_GLFW.h" />
     <ClInclude Include="src\Common\WECommon.h" />
     <ClInclude Include="src\Common\WELogger.h" />
+    <ClInclude Include="src\Loaders\IMeshFactory.h" />
+    <ClInclude Include="src\Loaders\ObjMeshFactory.h" />
     <ClInclude Include="src\Rendering\Camera.h" />
     <ClInclude Include="src\Rendering\Models\SimpleMesh.h" />
     <ClInclude Include="src\Rendering\Models\VertexFormat.h" />

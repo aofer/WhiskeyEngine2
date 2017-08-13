@@ -17,6 +17,9 @@
     <Filter Include="Rendering\Models">
       <UniqueIdentifier>{26c26b50-8219-4371-a8fb-03522c1dde13}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Loaders">
+      <UniqueIdentifier>{9c2d1348-54ee-4171-8c1b-d2f414b22674}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\appInit\Application.cpp">
@@ -42,6 +45,9 @@
     </ClCompile>
     <ClCompile Include="src\Common\WELogger.cpp">
       <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Loaders\ObjMeshFactory.cpp">
+      <Filter>Loaders</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +86,12 @@
     </ClInclude>
     <ClInclude Include="src\Common\WELogger.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Loaders\ObjMeshFactory.h">
+      <Filter>Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Loaders\IMeshFactory.h">
+      <Filter>Loaders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

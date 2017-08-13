@@ -15,7 +15,7 @@ int Application::Init(ApplicationSettings settings)
 	try {
 		//Init Logger
 		Logger::WELogger::GetInstance().Init();
-		LOG_ERROR("Initializing application");
+		//LOG_ERROR("Initializing application");
 		Init_GLFW glfwContext;
 		glfwContext.Init(settings.m_winSettings, context);
 		Rendering::ShaderManager::GetInstance().SetResourcesFolder(settings.m_resourcesFolder);
