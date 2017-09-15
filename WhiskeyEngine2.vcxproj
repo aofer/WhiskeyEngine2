@@ -25,9 +25,14 @@
     <ClCompile Include="src\Common\WELogger.cpp" />
     <ClCompile Include="src\Loaders\ObjMeshFactory.cpp" />
     <ClCompile Include="src\Rendering\Camera.cpp" />
+    <ClCompile Include="src\Rendering\CubeMapTexture.cpp" />
     <ClCompile Include="src\Rendering\Models\SimpleMesh.cpp" />
     <ClCompile Include="src\Rendering\ShaderManager.cpp" />
     <ClCompile Include="src\Rendering\ShaderProgram.cpp" />
+    <ClCompile Include="src\Rendering\Texture.cpp" />
+    <ClCompile Include="src\Scene\GameComponent.cpp" />
+    <ClCompile Include="src\Scene\GameObject.cpp" />
+    <ClCompile Include="src\Scene\Scene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\AppInit\Application.h" />
@@ -40,10 +45,17 @@
     <ClInclude Include="src\Loaders\IMeshFactory.h" />
     <ClInclude Include="src\Loaders\ObjMeshFactory.h" />
     <ClInclude Include="src\Rendering\Camera.h" />
+    <ClInclude Include="src\Rendering\CubeMapTexture.h" />
+    <ClInclude Include="src\Rendering\Lights.h" />
+    <ClInclude Include="src\Rendering\Materials.h" />
     <ClInclude Include="src\Rendering\Models\SimpleMesh.h" />
     <ClInclude Include="src\Rendering\Models\VertexFormat.h" />
     <ClInclude Include="src\Rendering\ShaderManager.h" />
     <ClInclude Include="src\Rendering\ShaderProgram.h" />
+    <ClInclude Include="src\Rendering\Texture.h" />
+    <ClInclude Include="src\Scene\GameComponent.h" />
+    <ClInclude Include="src\Scene\GameObject.h" />
+    <ClInclude Include="src\Scene\Scene.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5A8BD8F9-F6C8-4CCB-AA7D-D5EF1457E66E}</ProjectGuid>
@@ -133,7 +145,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;soil.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)thirdParty\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
@@ -167,7 +179,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <Lib>
-      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;soil.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)thirdParty\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>

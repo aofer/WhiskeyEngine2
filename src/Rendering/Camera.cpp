@@ -165,18 +165,9 @@ NAMESPACE_BEGIN(Rendering)
 
 	void Camera::updateMatrices()
 	{
-
 		projectionMatrix = glm::perspective(glm::radians(fieldOfView), aspectRatio, zNear, zFar);
-		//projectionMatrix[0][0] = 1.0f / (aspectRatio * glm::tan(fieldOfView / 2.0f));
-		//projectionMatrix[1][1] = 1.0f / glm::tan(fieldOfView / 2.0f);
-		//projectionMatrix[2][2] = (-zNear - zFar) / (zNear - zFar);
-		//projectionMatrix[2][3] = 1.0f;
-		//projectionMatrix[3][2] = 2.0f * zNear * zFar / (zNear - zFar);
-
-
 		viewMatrix = glm::lookAt(position, lookAt, up);
 		viewProjectionMatrix = projectionMatrix * viewMatrix;
-
 	}
 
 	void Camera::strafe(float speed)

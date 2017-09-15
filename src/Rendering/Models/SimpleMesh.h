@@ -9,7 +9,7 @@ NAMESPACE_BEGIN2(Rendering,Models)
 
 class SimpleMesh
 {
-	friend class ObjMeshFactory;
+	//friend class ObjMeshFactory;
 public:
 	SimpleMesh();
 	~SimpleMesh();
@@ -17,6 +17,7 @@ public:
 	void InitOnGPU();
 
 	void Draw();
+
 
 
 private:
@@ -38,8 +39,14 @@ private:
 
 	};
 
-	std::vector<SubMesh>		m_Entries;
+	std::vector<SubMesh>		m_entries;
 	bool						m_isLoadedOnGPU;
+
+	public:
+	std::vector<SubMesh>& GetEntries();
+	bool IsLoadedOnGPU() const;
+	void SetIsLoadedOnGPU(const bool& isLoaded);
+
 };
 
 NAMESPACE_END2

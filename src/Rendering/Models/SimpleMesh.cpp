@@ -60,7 +60,7 @@ SimpleMesh::~SimpleMesh()
 
 void SimpleMesh::InitOnGPU()
 {
-	for (auto& submesh : m_Entries)
+	for (auto& submesh : m_entries)
 	{
 		submesh.InitOnGPU();
 	}
@@ -69,12 +69,27 @@ void SimpleMesh::InitOnGPU()
 
 void SimpleMesh::Draw()
 {
-	for (unsigned int i = 0; i < m_Entries.size(); i++) {
-		glBindVertexArray(m_Entries.at(i).VAO);
-		glDrawElements(GL_TRIANGLES, m_Entries[i].m_indices.size(), GL_UNSIGNED_INT, 0);
+	for (unsigned int i = 0; i < m_entries.size(); i++) {
+		glBindVertexArray(m_entries.at(i).VAO);
+		glDrawElements(GL_TRIANGLES, m_entries[i].m_indices.size(), GL_UNSIGNED_INT, 0);
 	}
 }
 
+std::vector<SimpleMesh::SubMesh>& SimpleMesh::GetEntries()
+{
+	return m_entries;
+}
+
+bool SimpleMesh::IsLoadedOnGPU() const
+{
+	return m_isLoadedOnGPU;
+}
+
+void SimpleMesh::SetIsLoadedOnGPU(const bool& isLoaded)
+{
+	m_isLoadedOnGPU = isLoaded;
+}
 
 NAMESPACE_END2
+
 
